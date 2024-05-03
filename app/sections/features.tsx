@@ -175,7 +175,7 @@ export default function Grid() {
           <div>
             <h3 className="text-3xl font-bold">Full Stack Udvikling</h3>
             <p className="text-sm mt-3">
-              Jeg udvikler også backend og API'er til dine projekter.
+              Jeg udvikler også backend og API{"'"}er til dine projekter.
             </p>
           </div>
           <div className="flex justify-between overflow-hidden ">
