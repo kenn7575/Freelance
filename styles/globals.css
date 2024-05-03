@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 239deg 83.5% 66.7%;
+    --primary-foreground: 226deg 100% 96.7%;
+
+    --secondary: 271 91% 65.1%;
+    --secondary-foreground: 270deg 100% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+#hero {
+  position: relative;
+  background-image: radial-gradient(
+      at 120% 94%,
+      hsla(265, 57%, 47%, 0.5) 0px,
+      transparent 40%
+    ),
+    radial-gradient(at 0% 0%, hsl(52deg, 100%, 56.1%, 0.1) 0px, transparent 20%),
+    radial-gradient(at -10% 5%, hsla(258, 62%, 33%, 0.5) 0px, transparent 40%),
+    /* radical black gradient */
+      radial-gradient(
+        at 50% 50%,
+        hsla(0, 0%, 0%, 0) 0%,
+        hsla(0, 0%, 0%, 1) 100%
+      );
+  background-size: cover;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/stars.webp");
+  background-size: 100%;
+  opacity: 0.6; /* Set the opacity of the image */
+  z-index: -1;
+  background-attachment: fixed;
+}
+#sand {
+  background-image: url("/sand.jpg");
+  background-size: cover;
+  transform: scaleX(-1);
+}
+#sand > div {
+  transform: scaleX(-1);
+}
+#stars {
+  background-image: url("/stars.jpg");
+  background-size: cover;
+}
+#data {
+  background-image: url("/data.webp");
+  background-size: contain;
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#rainbow {
+  background: #40e0d0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    45deg,
+    #ff0080,
+    #ff8c00,
+    #40e0d0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.wrapper {
+  background: #fc466b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    120deg,
+    #3f5efb,
+    #fc466b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    120deg,
+    #3f5efb,
+    #fc466b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+#black-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1)
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
