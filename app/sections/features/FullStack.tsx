@@ -1,6 +1,39 @@
 import { MultiStepLoader as Loader } from "@/components/ui/Aceternity/multiStepLoader";
 import { Card } from "@/components/ui/card";
-import { advantagesWithBackendIntegrations } from "./features";
+export const advantagesWithBackendIntegrations = [
+  {
+    text: "Email nyhedsbrev",
+  },
+  {
+    text: "Booking System",
+  },
+  {
+    text: "Login system",
+  },
+  {
+    text: "Lagerstyring",
+  },
+  {
+    text: "Webshop",
+  },
+  {
+    text: "Booking system",
+  },
+  { text: "Digitalisering af processer" },
+  { text: "API integrationer" },
+
+  { text: "Database integration" },
+  { text: "Chatbots og Kundesupport" },
+  { text: "Tidsregistreringssystem" },
+  { text: "Online Forum" },
+  { text: "Logistik og Forsendelsessystem" },
+  { text: "Advanceret databehandling" },
+  { text: "Kommentarfelt" },
+  { text: "Online betaling og abonnenter" },
+  { text: "Auktionsplatform" },
+  { text: "Realtime chat" },
+  { text: "Digitalisering af excel-ark" },
+];
 
 export function FullStack() {
   return (

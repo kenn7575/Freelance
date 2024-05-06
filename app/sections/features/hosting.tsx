@@ -5,10 +5,7 @@ import { Card } from "@/components/ui/card";
 export default function Hosting() {
   return (
     <WobbleCard className="">
-      <Card
-        className="h-full border-none p-4 relative overflow-hidden min-h-60"
-        id="earth"
-      >
+      <Card className="h-full p-4 relative overflow-hidden min-h-60" id="earth">
         <Image
           src="/earth.jpg"
           alt="hero"

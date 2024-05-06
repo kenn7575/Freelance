@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="mt-12 flex justify-center gap-4">
         <Button
           size="lg"
-          className="uppercase gap-1 group  font-semibold"
+          className="uppercase gap-1 group font-bold"
           variant="ghost"
         >
           portfolio
@@ -32,8 +32,8 @@ export default function Hero() {
         </Button>
         <Button
           size="lg"
-          variant="secondary"
-          className="uppercase font-semibold "
+          variant="default"
+          className="uppercase font-bold text-black bg-white hover:bg-primary hover:text-white"
         >
           Kontakt mig
         </Button>

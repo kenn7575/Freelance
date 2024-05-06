@@ -14,7 +14,7 @@ export function Lamp() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-b from-foreground/95 to-foreground/70 py-4 bg-clip-text text-center tracking-tight text-transparent text-2xl px-4 md:text-4xl lg:text-5xl font-bold"
+        className="mt-8 bg-gradient-to-b from-white to-white/80 py-4 bg-clip-text text-center tracking-tight text-transparent text-2xl px-4 md:text-4xl lg:text-5xl font-bold"
       >
         Hvorfor vælge mig?
       </motion.h2>
@@ -32,7 +32,7 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-background w-full rounded-md z-0",
+        "relative flex min-h-[38rem] flex-col items-center justify-center overflow-hidden bg-background w-full rounded-md z-0",
         className
       )}
     >
