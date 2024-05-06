@@ -10,7 +10,7 @@ import {
   MessagesSquare,
   User,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -33,14 +33,13 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <link rel="icon" href="favicon.ico" />
       </head>
-
       <body
         className={cn(
           "bg-background font-sans antialiased text-foreground h-[100dvh] relative",
           plusJakartaSans.variable
         )}
       >
-        <nav className="sticky top-0 hidden sm:flex z-50 bg-red-500 ">Home</nav>
+        {/* <nav className="sticky top-0 hidden sm:flex z-50 bg-red-500 ">Home</nav> */}
         {/* desktop nav */}
         <nav
           id="nav-mobile"
@@ -77,6 +76,7 @@ export default function RootLayout({
         {/* mobile nav */}
         <main>{children}</main>
         <footer>footer</footer>
+        <Analytics />
       </body>
     </html>
   );
