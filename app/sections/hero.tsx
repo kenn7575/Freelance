@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center items-center font-bold w-full "
+      className="relative min-h-screen flex flex-col justify-center items-center font-bold w-full safe"
     >
       <h1 className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto">
         Professionelle web løsninger,{" "}

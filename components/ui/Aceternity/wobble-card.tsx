@@ -23,6 +23,9 @@ export const WobbleCard = ({
   wobbling effect. */
     handleMouseMove = (event: React.MouseEvent<HTMLElement>) => {
       const { clientX, clientY } = event;
+      /* `const rect = event.currentTarget.getBoundingClientRect();` is a line of code within the
+      `handleMouseMove` function that retrieves the bounding rectangle of the element that triggered
+      the mouse move event. */
       const rect = event.currentTarget.getBoundingClientRect();
       const x = (clientX - (rect.left + rect.width / 2)) / 20;
       const y = (clientY - (rect.top + rect.height / 2)) / 20;

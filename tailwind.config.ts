@@ -79,14 +79,20 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "spin-slow": "spin 150s linear infinite",
       },
       transitionDuration: {
         2000: "2000ms",
+      },
+      fontSize: {
+        "2xs": "0.625rem",
+        "3xs": "0.5rem",
       },
     },
   },
   plugins: [
     require("tailwindcss-animate"),
+    require("@tailwindcss/container-queries"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(

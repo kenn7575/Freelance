@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import Hero from "./sections/hero";
-import Features from "./sections/features";
+import Features from "./sections/features/features";
 
 import { Button } from "../components/ui/button";
 
